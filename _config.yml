@@ -1,0 +1,41 @@
+name: Klanadestin
+description: "Meaningless Art"
+url: "https://klanadestin.github.io"
+
+paginate: 10
+permalink: /:year/:month/:day/:title.html
+
+kramdown:
+  input: GFM
+  syntax_highlighter: rouge
+  syntax_highlighter_opts:
+      css_class: 'highlight'
+
+sass:
+  style: :expanded
+
+plugins:
+  - jekyll-sitemap
+  - jekyll-feed
+  - jekyll-paginate
+  - jekyll-seo-tag
+
+feed:
+  posts_limit: 100
+
+exclude:
+  - Gemfile
+  - Gemfile.lock
+  - LICENSE
+  - README.md
+  - CNAME
+  - drafts
+  - posts
+  - BACKUP
+  - config.yml
+  - drafts
+  - drafts_backup
+  - "00-ÖVERSÄTTA"
+
+include: ['_pages', '_pages/bookmarks', '_posts']
+exclude: ['drafts', 'posts', '00-ÖVERSÄTTA']
